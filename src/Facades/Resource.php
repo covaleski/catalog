@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Facade;
  * @method static void each(callable(\Covaleski\LaravelRoa\Resource\ResourceAccessor $resource, string $name): void $callback) Execute a callback over each mapped resource.
  * @method static bool exists(string $name) Check whether a resource is mapped.
  * @method static \Covaleski\LaravelRoa\Resource\ResourceAccessor get(string $name) Get a resource by its name.
+ * @method static \Illuminate\Support\Collection<int, string> getDirectories() Get mapped directories.
+ * @method static string getFilename() Get the map cache file's filename.
+ * @method static int getSize() Get the map cache file's size.
+ * @method static int getTimestamp() Get the map cache file's last modification time.
  * @method static bool isCached() Check whether map data is in storage.
  * @method static bool isLoaded() Check whether map data is loaded to memory.
  * @method static void load() Load map data from storage.
