@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static void delete() Delete map data from storage.
  * @method static void each(callable(\Covaleski\Laravel\Catalog\Model\ModelAccessor $model): void $callback) Execute a callback over each mapped model.
  * @method static bool exists(string $model) Check whether a model is mapped.
- * @method static \Covaleski\Laravel\Catalog\Model\ModelAccessor get(string $model) Get a model by its cache name.
+ * @method static \Covaleski\Laravel\Catalog\Model\ModelAccessor get(string $model) Access a model by its class name.
  * @method static \Illuminate\Support\Collection<int, string> getDirectories() Get mapped directories.
  * @method static string getFilename() Get the map cache file's filename.
  * @method static int getSize() Get the map cache file's size.

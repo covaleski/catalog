@@ -9,7 +9,7 @@ class Relationship
      */
     public function __construct(
         /**
-         * Relation type class name.
+         * Relation class name.
          */
         public string $relation,
 

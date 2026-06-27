@@ -129,7 +129,7 @@ class ModelMap
     }
 
     /**
-     * Get a model by its cache name.
+     * Access a model by its class name.
      */
     public function get(string $model): ModelAccessor
     {
@@ -232,14 +232,6 @@ class ModelMap
             }
         }
         $this->clear();
-    }
-
-    /**
-     * Compile the cache name of a model class.
-     */
-    protected function compileName(string $class_name): string
-    {
-        return (new ModelCompiler($class_name))->compileName();
     }
 
     /**

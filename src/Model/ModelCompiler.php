@@ -72,14 +72,6 @@ class ModelCompiler
     }
 
     /**
-     * Get the cache name for the model.
-     */
-    public function compileName(): string
-    {
-        return Str::plural(Str::kebab(class_basename($this->model)));
-    }
-
-    /**
      * Get the specified relationship from the model.
      */
     protected function compileRelationship(string $key): Relationship
