@@ -12,10 +12,10 @@ composer require covaleski/catalog
 
 ## Usage
 
-All package features are accessible through the `Resource` facade, which proxies
-a `ResourceMap` instance - also accessible through the service container.
+All package features are accessible through the `Catalog` facade, which proxies
+a `ModelMap` instance - also accessible through the service container.
 
-The resource map orchestrates model mapping and metadata caching. It allows you
+The model map orchestrates model mapping and metadata caching. It allows you
 to iterate over your application's models and to access details on them without
 using the reflection API.
 
