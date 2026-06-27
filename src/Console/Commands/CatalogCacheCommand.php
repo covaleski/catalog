@@ -7,7 +7,7 @@ use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
 
-#[Signature('resource:cache')]
+#[Signature('catalog:cache')]
 #[Description('Update mapped models and cache all resources.')]
 class CatalogCacheCommand extends Command
 {
@@ -16,7 +16,7 @@ class CatalogCacheCommand extends Command
      */
     public function handle()
     {
-        $this->call('resource:clear');
+        $this->call('catalog:clear');
         Catalog::each(fn ($resource) => $resource->cache());
     }
 }

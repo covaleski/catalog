@@ -9,7 +9,7 @@ use Illuminate\Console\Command;
 
 use function Covaleski\Laravel\Catalog\format_size_units;
 
-#[Signature('resource:list')]
+#[Signature('catalog:list')]
 #[Description('List all currently mapped models.')]
 class CatalogListCommand extends Command
 {

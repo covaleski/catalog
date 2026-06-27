@@ -71,8 +71,8 @@ class PackageServiceProvider extends ServiceProvider
             Commands\CatalogShowCommand::class,
         ]);
         $this->optimizes(
-            optimize: 'resource:cache',
-            clear: 'resource:clear',
+            optimize: 'catalog:cache',
+            clear: 'catalog:clear',
             key: 'covaleski/catalog',
         );
     }

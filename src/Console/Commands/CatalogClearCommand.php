@@ -7,7 +7,7 @@ use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
 
-#[Signature('resource:clear')]
+#[Signature('catalog:clear')]
 #[Description('Clear mapped models and currently cached resources.')]
 class CatalogClearCommand extends Command
 {

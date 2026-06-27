@@ -7,7 +7,7 @@ use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
 
-#[Signature('resource:show {resource} {--cached}')]
+#[Signature('catalog:show {resource} {--cached}')]
 #[Description('Show details of the specified resource.')]
 class CatalogShowCommand extends Command
 {
